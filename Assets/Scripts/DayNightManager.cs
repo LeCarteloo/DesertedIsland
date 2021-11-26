@@ -10,42 +10,16 @@ public class DayNightManager : MonoBehaviour
     // Colors
     public Gradient AmbientColor;
     public Gradient LightHue;
-    [Header("Fog not yet implemented")]
-    public Gradient FogColor;
-
-    [Header("Speed Settings")]
-    // Faster cycle
-    public bool fastCycle;
-    // Speed of day and night cycle
-    public float speed;
-    // Time of the day (in hours)
-    [Range(0, 24)] public float timeOfDay;
-
-    private void Start() {
-        if(fastCycle) {
-            // Few seconds
-            speed = 1f;
-        } else {
-            // 30 minutes
-            speed = 0.004f;
-        }
-    }
+    [Header("Time")]
+    public TimeManager timeManager;
 
     private void Update()
     {
-        timeOfDay = timeOfDay + Time.deltaTime * speed;
-        timeOfDay = timeOfDay % 24;
-        updateHour(timeOfDay / 24f);
+        updateHour(timeManager.getTime()); 
     }
-
 
     private void updateHour(float time)
     {
-        // If fog is turned on in enviroment setting
-        if(RenderSettings.fog) {
-            RenderSettings.fogColor = FogColor.Evaluate(time);
-        }
-
         // Ambient color and light color
         RenderSettings.ambientLight = AmbientColor.Evaluate(time);
         DirectionalLight.color = LightHue.Evaluate(time);
