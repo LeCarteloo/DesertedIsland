@@ -5,7 +5,9 @@ using UnityEngine;
 public class WeatherManager : MonoBehaviour
 {
     [Header("Weather Settings")]
-    public ParticleSystem particle;
+    public GameObject rain;
+    public GameObject heavyRain;
+    public GameObject snow;
     [Header("Fog Settings")]
     public bool isFogOn = true;
     public Gradient FogColor;
@@ -14,21 +16,53 @@ public class WeatherManager : MonoBehaviour
     [Header("Time")]
 
     public TimeManager timeManager;
+    private int temp;
+    private bool isActive = false;
 
     void Start()
     {
         RenderSettings.fog = isFogOn;
-        // fogColor = new Color(191, 213, 192);
-        // RenderSettings.fogColor = fogColor;
+        RenderSettings.fogDensity = fogDensity;
+        
+        rain.SetActive(false);
+        heavyRain.SetActive(false);
+        snow.SetActive(false);
     }
 
     void Update()
     {
-        // Night fog (not yet)
-        if(isFogOn) {
-            RenderSettings.fogColor = FogColor.Evaluate(timeManager.getTime());
-            RenderSettings.fogDensity = fogDensity;
-        }
+        RenderSettings.fogColor = FogColor.Evaluate(timeManager.getTime());
 
+        turnWeather(rain, 0, 10);
+        turnWeather(heavyRain, 10, 15);
+        turnWeather(snow, 15, 20);
+
+        turnFog(20, 30);
+    }
+
+    private void turnWeather(GameObject gameObject, int from, int to) {
+        if(timeManager.getState() < to && timeManager.getState() > from && !isActive) {
+            isActive = true;
+            gameObject.SetActive(true);
+            temp = timeManager.getHour() + Random.Range(5,12) >= 23 ? 12 : timeManager.getHour() + Random.Range(5,12);
+            Debug.Log(temp);
+        }
+        if(temp == timeManager.getHour()) {
+            isActive = false;
+            gameObject.SetActive(false);
+        }
+    }
+
+    private void turnFog(int from, int to) {
+        if(timeManager.getState() < to && timeManager.getState() > from && !isActive) {
+            isActive = true;
+            RenderSettings.fogDensity = Random.Range(0.01f, 0.05f);
+            temp = timeManager.getHour() + Random.Range(5,12) >= 23 ? 12 : timeManager.getHour() + Random.Range(5,12);
+            Debug.Log(temp);
+        }
+        if(temp == timeManager.getHour()) {
+            isActive = false;
+            RenderSettings.fogDensity = 0.01f;
+        }
     }
 }

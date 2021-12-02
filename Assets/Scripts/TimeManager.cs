@@ -5,20 +5,33 @@ using UnityEngine;
 public class TimeManager : MonoBehaviour
 {
     [Header("Current Time")]
-    public int day = 0;
-    public int hour = 0;
-    public int minute = 0;
+     [SerializeField]
+    private int day = 0;
+     [SerializeField]
+    private int hour = 0;
+     [SerializeField]
+    private int minute = 0;
 
     [Header("Time Settings")]
     // Speed
     public float speed = 0.5f;
     // Time of the day (counter by formula below)
     public float time;
-
     private float timer;
+    private int state = 100;
 
     public float getTime() {
         return time;
+    }
+    public int getDay() {
+        return day;
+    }
+    public int getHour() {
+        return hour;
+    }
+
+    public int getState() {
+        return state;
     }
 
     // Start is called before the first frame update
@@ -44,6 +57,7 @@ public class TimeManager : MonoBehaviour
                     hour = 0;
                     day++;
                 }
+                state = Random.Range(0, 100);
             }
             timer = speed;
         }
