@@ -82,7 +82,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
             {
-                m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+                m_Jump = CrossPlatformInputManager.GetButtonDown("Jump"); 
             }
 
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
@@ -91,6 +91,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 PlayLandingSound();
                 m_MoveDir.y = 0f;
                 m_Jumping = false;
+                animator.SetBool("Jump", false);
             }
 
             if (!m_CharacterController.isGrounded && !m_Jumping && m_PreviouslyGrounded)
@@ -133,6 +134,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             else if (Input.GetMouseButtonUp(0))
             {
                 animator.SetBool("HitR", false);
+            }
+
+            if (m_Jump && brokenLeg == false)
+            {
+                animator.SetBool("Jump", true);
             }
 
         }
