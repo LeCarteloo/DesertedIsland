@@ -7,12 +7,20 @@ public class WeaponsSwitch : MonoBehaviour
 {
     public GameObject sword;
     public GameObject axe;
+    public GameObject meat;
+    public GameObject axe2;
 
     public Color defaultSlotColor;
     public Color selectSlotColor;
     public GameObject[] slots;
 
     public Animator animator;
+    public bool switchState;
+
+    private void Start()
+    {
+        switchState = true;
+    }
 
     // Update is called once per frame
     void Update()
@@ -29,38 +37,92 @@ public class WeaponsSwitch : MonoBehaviour
         {
             SwapWeapons(3);
         }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            SwapWeapons(4);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            SwapWeapons(5);
+        }
     }
 
     void SwapWeapons(int key)
     {
-        for(int i=0; i<3; i++)
+        if (switchState)
         {
-            slots[i].GetComponent<Image>().color = defaultSlotColor;
-        }
+            animator.SetBool("Switch", true);
+            switchState = false;
 
-        Debug.Log(key);
-        Debug.Log(slots[key - 1].GetComponent<Image>().name);
-        slots[key-1].GetComponent<Image>().color = new Color32(123, 122, 25, 225);
-        //GameObject item = slots[key-1].transform.GetChild(0).gameObject;
-        //item.GetComponent<Image>().color = selectSlotColor;
+            for (int i = 0; i < 5; i++)
+            {
+                slots[i].GetComponent<Image>().color = defaultSlotColor;
+            }
+
+            slots[key - 1].GetComponent<Image>().color = new Color32(123, 122, 25, 225);
+
+            DoDelayAction(0.6f, key);
+        }
+    }
+
+    void NotShowSwitch(int key)
+    {
+
+        axe.SetActive(false);
+        sword.SetActive(false);
+        axe2.SetActive(false);
+        meat.SetActive(false);
+
 
         if (key == 1)
         {
             animator.SetBool("WeaponIsOn", true);
             sword.SetActive(true);
-            axe.SetActive(false);
         }
-        else if(key == 2)
+        else if (key == 2)
         {
             animator.SetBool("WeaponIsOn", true);
-            sword.SetActive(false);
             axe.SetActive(true);
         }
-        else if(key == 3)
+        else if (key == 3)
         {
             animator.SetBool("WeaponIsOn", false);
-            sword.SetActive(false);
-            axe.SetActive(false);
         }
+        else if (key == 4)
+        {
+            animator.SetBool("WeaponIsOn", true);
+            axe2.SetActive(true);
+        }
+        else if (key == 5)
+        {
+            animator.SetBool("WeaponIsOn", true);
+            meat.SetActive(true);
+        }
+    }
+
+    void DoDelayAction(float delayTime, int key)
+    {
+        StartCoroutine(DelayAction(delayTime));
+        StartCoroutine(SwitchItem(delayTime/2, key));
+    }
+
+    IEnumerator DelayAction(float delayTime)
+    {
+        //Wait for the specified delay time before continuing.
+        yield return new WaitForSeconds(delayTime);
+
+        //Do the action after the delay time has finished.
+        animator.SetBool("Switch", false);
+        switchState = true;
+        
+    }
+
+    IEnumerator SwitchItem(float delayTime, int key)
+    {
+        //Wait for the specified delay time before continuing.
+        yield return new WaitForSeconds(delayTime);
+        //Do the action after the delay time has finished.
+
+        NotShowSwitch(key);
     }
 }

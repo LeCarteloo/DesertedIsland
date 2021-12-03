@@ -27,6 +27,9 @@ ModelImporter:
   - first:
       74: -472583207363285103
     second: Swing02
+  - first:
+      74: 19495230745798370
+    second: Swing01 (1)
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -56,11 +59,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
-      takeName: Idle
+      name: Swing01 (1)
+      takeName: Swing01
       internalID: 0
       firstFrame: -1
-      lastFrame: 309
+      lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
