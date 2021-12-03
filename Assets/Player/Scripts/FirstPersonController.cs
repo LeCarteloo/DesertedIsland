@@ -54,6 +54,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+        public Animator animator;
+
         // Use this for initialization
         private void Start()
         {
@@ -98,6 +100,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             StatusLeg();
             StatusTemperature();
+            Animations();
            
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
         }
@@ -108,6 +111,30 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource.clip = m_LandSound;
             m_AudioSource.Play();
             m_NextStep = m_StepCycle + .5f;
+        }
+
+        private void Animations()
+        {
+            //if run
+            if (!m_IsWalking)
+            {
+                animator.SetBool("isRunning", true);
+            }
+            else
+            {
+                animator.SetBool("isRunning", false);
+            }
+
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                animator.SetBool("HitR", true);
+            }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                animator.SetBool("HitR", false);
+            }
+
         }
 
         private void StatusLeg()
@@ -305,12 +332,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_Camera.transform.localPosition =
                     m_HeadBob.DoHeadBob(m_CharacterController.velocity.magnitude +
                                       (speed * (m_IsWalking ? 1f : m_RunstepLenghten)));
-
                 newCameraPosition = m_Camera.transform.localPosition;
                 newCameraPosition.y = m_Camera.transform.localPosition.y - m_JumpBob.Offset();
             }
             else
             {
+
                 newCameraPosition = m_Camera.transform.localPosition;
                 newCameraPosition.y = m_OriginalCameraPosition.y - m_JumpBob.Offset();
             }
