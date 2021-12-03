@@ -9,6 +9,9 @@ public class WeaponsSwitch : MonoBehaviour
     public GameObject axe;
     public GameObject meat;
     public GameObject axe2;
+    public GameObject knife;
+    public GameObject torch;
+    public GameObject axe3;
 
     public Color defaultSlotColor;
     public Color selectSlotColor;
@@ -45,6 +48,18 @@ public class WeaponsSwitch : MonoBehaviour
         {
             SwapWeapons(5);
         }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            SwapWeapons(6);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            SwapWeapons(7);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            SwapWeapons(8);
+        }
     }
 
     void SwapWeapons(int key)
@@ -54,7 +69,7 @@ public class WeaponsSwitch : MonoBehaviour
             animator.SetBool("Switch", true);
             switchState = false;
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 8; i++)
             {
                 slots[i].GetComponent<Image>().color = defaultSlotColor;
             }
@@ -72,6 +87,10 @@ public class WeaponsSwitch : MonoBehaviour
         sword.SetActive(false);
         axe2.SetActive(false);
         meat.SetActive(false);
+        axe3.SetActive(false);
+        knife.SetActive(false);
+        torch.SetActive(false);
+
 
 
         if (key == 1)
@@ -97,6 +116,21 @@ public class WeaponsSwitch : MonoBehaviour
         {
             animator.SetBool("WeaponIsOn", true);
             meat.SetActive(true);
+        }
+        else if (key == 6)
+        {
+            animator.SetBool("WeaponIsOn", true);
+            knife.SetActive(true);
+        }
+        else if (key == 7)
+        {
+            animator.SetBool("WeaponIsOn", true);
+            torch.SetActive(true);
+        }
+        else if (key == 8)
+        {
+            animator.SetBool("WeaponIsOn", true);
+            axe3.SetActive(true);
         }
     }
 
