@@ -106,6 +106,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
         }
 
+        private void Awake()
+        {
+
+        }
 
         private void PlayLandingSound()
         {
@@ -117,7 +121,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void Animations()
         {
             //if run
-            if (!m_IsWalking)
+            if (!m_IsWalking && Input.GetKey(KeyCode.LeftShift))
             {
                 animator.SetBool("isRunning", true);
             }
@@ -362,7 +366,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
 #if !MOBILE_INPUT
             // On standalone builds, walk/run speed is modified by a key press.
             // keep track of whether or not the character is walking or running
-            m_IsWalking = !Input.GetKey(KeyCode.LeftShift);
+            if(Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W))
+            {
+                m_IsWalking = false;
+            }  
+            else
+            {
+                m_IsWalking = true;
+            }
 #endif
             // set the desired speed to be walking or running
             speed = m_IsWalking ? m_WalkSpeed : m_RunSpeed;
