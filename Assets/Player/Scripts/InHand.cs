@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InHand : MonoBehaviour
 {
     public int damage = 50;
     public float distance;
-    public float maxDistance = 2;
+    public float maxDistance = 5;
 
     public bool canAtack = true;
+
+    public Text pickIt;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +25,6 @@ public class InHand : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             DoDelayAction(0.9f);
-
             canAtack = false;
             RaycastHit hit;
 
@@ -35,11 +37,7 @@ public class InHand : MonoBehaviour
 
                 }
             }
-            Debug.Log("TAK");
-            
         }
-
- 
     }
 
     void DoDelayAction(float delayTime)

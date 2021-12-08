@@ -15,6 +15,7 @@ public class StatusBars : MonoBehaviour
         healthBar = GetComponent<Image>();
         // var player = GameObject.Find("Player").GetComponent<FirstPerson>();
         // Debug.Log(player);
+        maxHealth = 100f;
     }
     private void Update() {
         // currentHealth = player.hp;

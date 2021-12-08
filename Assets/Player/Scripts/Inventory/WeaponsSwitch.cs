@@ -5,17 +5,14 @@ using UnityEngine.UI;
 
 public class WeaponsSwitch : MonoBehaviour
 {
-    public GameObject sword;
-    public GameObject axe;
-    public GameObject meat;
-    public GameObject axe2;
-    public GameObject knife;
-    public GameObject torch;
-    public GameObject axe3;
+    public GameObject[] objectID;
 
     public Color defaultSlotColor;
     public Color selectSlotColor;
-    public GameObject[] slots;
+    public GameObject[] slots; //kolor aktualnie wybranego slota i odow³anie siê do jego ikony
+    public bool[] slotsStatus; //if == true - zajêty slot 
+    public int[] slotObjectId;
+    public int slotSet = 1;
 
     public Animator animator;
     public bool switchState;
@@ -23,6 +20,13 @@ public class WeaponsSwitch : MonoBehaviour
     private void Start()
     {
         switchState = true;
+        for(int i=0; i<=9; i++)
+        {
+            slots[i].transform.GetChild(0).gameObject.SetActive(false);
+            slotObjectId[i] = 0;
+        }
+
+        SwapWeapons(1);
     }
 
     // Update is called once per frame
@@ -60,84 +64,171 @@ public class WeaponsSwitch : MonoBehaviour
         {
             SwapWeapons(8);
         }
+        if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            SwapWeapons(9);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            SwapWeapons(10);
+        }
     }
 
-    void SwapWeapons(int key)
+    public int getSlotSet()
     {
+        return slotSet;
+    }
+
+    public bool getItemInSetSlot()
+    {
+        return slotsStatus[slotSet];
+    }
+
+    public void setItemSlot(int ID)
+    {
+        slotObjectId[slotSet] = ID;
+        SwapWeapons(slotSet+1);
+    }   
+
+    public void setIconSlot(Sprite icon)
+    {
+        GameObject iconSlot = slots[slotSet].transform.GetChild(0).gameObject;
+        iconSlot.GetComponent<Image>().sprite = icon;
+        iconSlot.SetActive(true);
+        slotsStatus[slotSet] = true;
+    }
+
+
+    void SwapWeapons(int slot)
+    {
+        slotSet = slot-1;
+
         if (switchState)
         {
             animator.SetBool("Switch", true);
             switchState = false;
 
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < 10; i++)
             {
                 slots[i].GetComponent<Image>().color = defaultSlotColor;
             }
 
-            slots[key - 1].GetComponent<Image>().color = new Color32(123, 122, 25, 225);
+            slots[slot - 1].GetComponent<Image>().color = new Color32(123, 122, 25, 225);
 
-            DoDelayAction(0.6f, key);
+            DoDelayAction(0.6f, slot);
         }
     }
 
-    void NotShowSwitch(int key)
+    void NotShowSwitch(int slot)
     {
 
-        axe.SetActive(false);
-        sword.SetActive(false);
-        axe2.SetActive(false);
-        meat.SetActive(false);
-        axe3.SetActive(false);
-        knife.SetActive(false);
-        torch.SetActive(false);
+        for(int i=0; i< objectID.Length; i++)
+        {
+            objectID[i].SetActive(false);
+        }
+ 
 
-
-
-        if (key == 1)
+        if (slot == 1)
         {
-            animator.SetBool("WeaponIsOn", true);
-            sword.SetActive(true);
+            if(slotsStatus[slotSet] == true) {
+                animator.SetBool("WeaponIsOn", true);
+                objectID[slotObjectId[slotSet]].SetActive(true);
+            }
+            else
+            {
+                animator.SetBool("WeaponIsOn", false);
+            }
         }
-        else if (key == 2)
+        else if (slot == 2)
         {
-            animator.SetBool("WeaponIsOn", true);
-            axe.SetActive(true);
+            if (slotsStatus[slotSet] == true)
+            {
+                animator.SetBool("WeaponIsOn", true);
+                objectID[slotObjectId[slotSet]].SetActive(true);
+            }
+            else
+            {
+                animator.SetBool("WeaponIsOn", false);
+            }
         }
-        else if (key == 3)
+        else if (slot == 3)
         {
-            animator.SetBool("WeaponIsOn", false);
+            if (slotsStatus[slotSet] == true)
+            {
+                animator.SetBool("WeaponIsOn", true);
+                objectID[slotObjectId[slotSet]].SetActive(true);
+            }
+            else
+            {
+                animator.SetBool("WeaponIsOn", false);
+            }
         }
-        else if (key == 4)
+        else if (slot == 4)
         {
-            animator.SetBool("WeaponIsOn", true);
-            axe2.SetActive(true);
+            if (slotsStatus[slotSet] == true)
+            {
+                animator.SetBool("WeaponIsOn", true);
+                objectID[slotObjectId[slotSet]].SetActive(true);
+            }
+            else
+            {
+                animator.SetBool("WeaponIsOn", false);
+            }
         }
-        else if (key == 5)
+        else if (slot == 5)
         {
-            animator.SetBool("WeaponIsOn", true);
-            meat.SetActive(true);
+            if (slotsStatus[slotSet] == true)
+            {
+                animator.SetBool("WeaponIsOn", true);
+                objectID[slotObjectId[slotSet]].SetActive(true);
+            }
+            else
+            {
+                animator.SetBool("WeaponIsOn", false);
+            }
         }
-        else if (key == 6)
+        else if (slot == 6)
         {
-            animator.SetBool("WeaponIsOn", true);
-            knife.SetActive(true);
+            if (slotsStatus[slotSet] == true)
+            {
+                animator.SetBool("WeaponIsOn", true);
+                objectID[slotObjectId[slotSet]].SetActive(true);
+            }
+            else
+            {
+                animator.SetBool("WeaponIsOn", false);
+            }
         }
-        else if (key == 7)
+        else if (slot == 7)
         {
-            animator.SetBool("WeaponIsOn", true);
-            torch.SetActive(true);
+            if (slotsStatus[slotSet] == true)
+            {
+                animator.SetBool("WeaponIsOn", true);
+                objectID[slotObjectId[slotSet]].SetActive(true);
+            }
+            else
+            {
+                animator.SetBool("WeaponIsOn", false);
+            }
         }
-        else if (key == 8)
+        else if (slot == 8)
         {
-            animator.SetBool("WeaponIsOn", true);
-            axe3.SetActive(true);
+            if (slotsStatus[slotSet] == true)
+            {
+                animator.SetBool("WeaponIsOn", true);
+                objectID[slotObjectId[slotSet]].SetActive(true);
+            }
+            else
+            {
+                animator.SetBool("WeaponIsOn", false);
+            }
         }
     }
 
-    void DoDelayAction(float delayTime, int key)
+    void DoDelayAction(float delayTime, int slot)
     {
         StartCoroutine(DelayAction(delayTime));
-        StartCoroutine(SwitchItem(delayTime/2, key));
+        StartCoroutine(SwitchItem(delayTime/2 + 0.3f, slot));
     }
 
     IEnumerator DelayAction(float delayTime)
@@ -151,12 +242,12 @@ public class WeaponsSwitch : MonoBehaviour
         
     }
 
-    IEnumerator SwitchItem(float delayTime, int key)
+    IEnumerator SwitchItem(float delayTime, int slot)
     {
         //Wait for the specified delay time before continuing.
         yield return new WaitForSeconds(delayTime);
         //Do the action after the delay time has finished.
 
-        NotShowSwitch(key);
+        NotShowSwitch(slot);
     }
 }

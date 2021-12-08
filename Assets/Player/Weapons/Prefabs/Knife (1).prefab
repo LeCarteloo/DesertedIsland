@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1006044184890710538}
   - component: {fileID: 1006044184890710548}
   - component: {fileID: 1006044184890710539}
-  - component: {fileID: 7279388086253529209}
   - component: {fileID: 5402639289694797607}
   - component: {fileID: 8900961048603072295}
+  - component: {fileID: 942943698506417784}
+  - component: {fileID: 1480349156574262833}
   m_Layer: 10
   m_Name: Knife (1)
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006044184890710537}
-  m_LocalRotation: {x: -0.6328979, y: -0.7682828, z: -0.088796675, w: 0.036013868}
+  m_LocalRotation: {x: 0.63290036, y: 0.76828057, z: 0.08879837, w: -0.03601308}
   m_LocalPosition: {x: 1.4894257, y: 0.23020172, z: -1.8469238}
   m_LocalScale: {x: 1.12, y: 1.4, z: 1.2600001}
   m_Children: []
@@ -84,18 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7279388086253529209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006044184890710537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24591ceff7346264781f448e2c3cd020, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &5402639289694797607
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -107,8 +96,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.010712369, y: 0.19220322, z: 0.030616613}
-  m_Center: {x: -4.1807527e-10, y: 0.0021376424, z: 0.002106109}
+  m_Size: {x: 0.019138785, y: 0.19220324, z: 0.03392579}
+  m_Center: {x: -0.00032537756, y: 0.002137646, z: 0.0022207792}
 --- !u!54 &8900961048603072295
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -125,3 +114,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &942943698506417784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006044184890710537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b7d9438c73d504babaab6a4bcbdbb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectID: 6
+  weaponSwitch: {fileID: 0}
+  pickIt: {fileID: 0}
+  icon: {fileID: 21300000, guid: 47cc968301bff9442bc6c44bfda0a4fb, type: 3}
+--- !u!135 &1480349156574262833
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006044184890710537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3
+  m_Center: {x: -4.1807527e-10, y: 0.0021223836, z: 0.0020908501}

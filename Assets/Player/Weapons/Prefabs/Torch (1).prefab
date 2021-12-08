@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2913948521130760394}
   - component: {fileID: 2913948521130760392}
   - component: {fileID: 2913948521130760393}
-  - component: {fileID: 4850201156815345079}
   - component: {fileID: 5844150286289609062}
   - component: {fileID: 2818944757700496881}
+  - component: {fileID: 1941049994798782750}
+  - component: {fileID: 5972009641892193706}
   m_Layer: 10
   m_Name: Torch (1)
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2913948521130760395}
-  m_LocalRotation: {x: -0.4432325, y: -0.19533868, z: 0.5931731, w: -0.64306563}
+  m_LocalRotation: {x: 0.4432352, y: 0.19533724, z: -0.5931696, w: 0.6430675}
   m_LocalPosition: {x: -0.052001953, y: 0.23976135, z: -2.0579987}
   m_LocalScale: {x: 0.70000005, y: 1.4000002, z: 0.70000017}
   m_Children: []
@@ -84,18 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4850201156815345079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2913948521130760395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24591ceff7346264781f448e2c3cd020, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &5844150286289609062
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -104,11 +93,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2913948521130760395}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.07230001, y: 0.27325404, z: 0.06261367}
-  m_Center: {x: 2.9944092e-10, y: 0.005023785, z: 5.9888183e-10}
+  m_Size: {x: 0.08989636, y: 0.27325404, z: 0.082127176}
+  m_Center: {x: 0.0003014823, y: 0.005023787, z: -0.0005918102}
 --- !u!54 &2818944757700496881
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -125,3 +114,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1941049994798782750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913948521130760395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b7d9438c73d504babaab6a4bcbdbb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectID: 4
+  weaponSwitch: {fileID: 0}
+  pickIt: {fileID: 0}
+  icon: {fileID: 21300000, guid: b5caf1234824fa64aa6336b492344481, type: 3}
+--- !u!135 &5972009641892193706
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913948521130760395}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.4
+  m_Center: {x: 2.9944092e-10, y: 0.0050390437, z: -0.0000076287956}

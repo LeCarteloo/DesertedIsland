@@ -9,11 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8961573233896817002}
+  - component: {fileID: -9104051914809381350}
   - component: {fileID: 5472503522138164943}
   - component: {fileID: 7788636616566667781}
   - component: {fileID: 47170086609555284}
   - component: {fileID: 8641206883648629353}
-  - component: {fileID: 7762942363428490117}
+  - component: {fileID: 6653733973165462034}
   m_Layer: 0
   m_Name: AxeItemWord
   m_TagString: Untagged
@@ -28,13 +29,29 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8581107492159871952}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 189.895, y: 70.485, z: 217.593}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &-9104051914809381350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8581107492159871952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b7d9438c73d504babaab6a4bcbdbb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectID: 0
+  weaponSwitch: {fileID: 0}
+  pickIt: {fileID: 0}
+  icon: {fileID: 21300000, guid: 2a0efd4bb11979a498f2e47a4dda8479, type: 3}
 --- !u!33 &5472503522138164943
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -92,7 +109,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8581107492159871952}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.09103276, y: 0.02856, z: 0.38101906}
@@ -113,15 +130,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7762942363428490117
-MonoBehaviour:
+--- !u!135 &6653733973165462034
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8581107492159871952}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24591ceff7346264781f448e2c3cd020, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 2
+  m_Radius: 0.3
+  m_Center: {x: -0.03123638, y: 0.00000004004687, z: 0.10347289}

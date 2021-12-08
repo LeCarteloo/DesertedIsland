@@ -17,7 +17,7 @@ public class PlayerControler : MonoBehaviour {
 	public float gravity = 20.0f;
 	//Predkosc biegania.
 	public float wPowietrzu = 7.0f;
-	int temp = 0;
+
 
 	//Złamana noga.
 	public bool zlamanaNoga = false;
