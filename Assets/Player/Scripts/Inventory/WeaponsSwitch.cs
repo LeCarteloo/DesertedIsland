@@ -98,6 +98,26 @@ public class WeaponsSwitch : MonoBehaviour
         slotsStatus[slotSet] = true;
     }
 
+    public void setEmptyIconSlot()
+    {
+        Debug.Log("setEmptyIconSlot: " + slotSet);
+        GameObject iconSlot = slots[slotSet].transform.GetChild(0).gameObject;
+        iconSlot.SetActive(false);
+        slotsStatus[slotSet] = false;
+    }
+
+    public void setStatusSlot(bool status)
+    {
+        Debug.Log("setStatusSlot: " + slotSet);
+        slotsStatus[slotSet] = status;
+        SwapWeapons(slotSet+1);
+    }
+
+    public int getSetItemId()
+    {
+        Debug.Log("getSetItemId: " + slotSet);
+        return slotObjectId[slotSet];
+    }
 
     void SwapWeapons(int slot)
     {

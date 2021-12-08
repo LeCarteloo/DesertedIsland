@@ -10,7 +10,7 @@ public class Item : MonoBehaviour
     public Text pickIt;
     private bool canPick;
     public Sprite icon;
-
+    private GameObject objectText;
 
     //aktualny slot czy wolny?
     //
@@ -20,6 +20,9 @@ public class Item : MonoBehaviour
         canPick = false;
 
         weaponSwitch = FindObjectOfType<WeaponsSwitch>();
+        objectText = GameObject.FindGameObjectWithTag("uselessTagForPickIt");
+        pickIt = objectText.GetComponent<Text>();
+        pickIt.text = "";
     }
     private void Update()
     {
@@ -36,7 +39,6 @@ public class Item : MonoBehaviour
             {
                 weaponSwitch.setIconSlot(icon);
                 weaponSwitch.setItemSlot(ObjectID);
-                pickIt.gameObject.SetActive(false);
                 DestroyItem();
             }
         }
@@ -58,7 +60,6 @@ public class Item : MonoBehaviour
         if (other.tag == "Player")
         {
             pickIt.text = "Naciœnij [F] aby podnieœæ";
-            pickIt.gameObject.SetActive(true);
             canPick = true;
         }
     }
@@ -67,7 +68,7 @@ public class Item : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            pickIt.gameObject.SetActive(false);
+            pickIt.text = "";
             canPick = false;
         }
     }
@@ -83,7 +84,7 @@ public class Item : MonoBehaviour
         yield return new WaitForSeconds(delayTime);
 
         //Do the action after the delay time has finished.
-        pickIt.gameObject.SetActive(false);
+        pickIt.text = "";
 
     }
 }
