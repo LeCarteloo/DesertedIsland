@@ -129,7 +129,7 @@ MonoBehaviour:
   ObjectID: 6
   weaponSwitch: {fileID: 0}
   pickIt: {fileID: 0}
-  icon: {fileID: 21300000, guid: 47cc968301bff9442bc6c44bfda0a4fb, type: 3}
+  icon: {fileID: 21300000, guid: c893f57bab47e8940b68f414abbb42d9, type: 3}
 --- !u!135 &1480349156574262833
 SphereCollider:
   m_ObjectHideFlags: 0

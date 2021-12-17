@@ -51,7 +51,7 @@ MonoBehaviour:
   ObjectID: 0
   weaponSwitch: {fileID: 0}
   pickIt: {fileID: 0}
-  icon: {fileID: 21300000, guid: 2a0efd4bb11979a498f2e47a4dda8479, type: 3}
+  icon: {fileID: 21300000, guid: 9aec4bc19663ca44c90a0ae1a44ad977, type: 3}
 --- !u!33 &5472503522138164943
 MeshFilter:
   m_ObjectHideFlags: 0
