@@ -29,10 +29,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
-        public float hp = 100.0f;
-        public float food = 100.0f;
-        public float water = 100.0f;
-        public float temperature = 36.6f;
+        
         public bool brokenLeg;
         public float aktualnaWysokoscSkoku = 0f;
 
@@ -70,8 +67,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
 
-            InvokeRepeating("FoodSystem", 0, 5);
-            InvokeRepeating("WaterSystem", 0, 10);
         }
 
 
@@ -100,7 +95,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
             StatusLeg();
-            StatusTemperature();
             Animations();
            
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
@@ -173,60 +167,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             brokenLeg = false;
         }
 
-        private void FoodSystem()
-        {
-            food--;
-            if (food < 0)
-            {
-                //if 0 food
-            }
-        }
-
-        private void WaterSystem()
-        {
-            water--;
-            if (water < 0)
-            {
-                //if 0 water
-            }
-        }
-
-        private void StatusTemperature()
-        {
-            if (temperature >= 40)
-            {
-                //if hot
-                TemperatureHigh();
-            }
-
-            if (temperature <= 0)
-            {
-                //if cold
-                TemperatureLow();
-            }
-
-            if (temperature > 0 && temperature < 40)
-            {
-                //if normal
-                TemperatureNormal();
-            }
-        }
-
-        private void TemperatureHigh()
-        {
-
-        }
-
-        private void TemperatureLow()
-        {
-
-        }
-
-        private void TemperatureNormal()
-        {
-
-        }
-
+        
 
         private void FixedUpdate()
         {

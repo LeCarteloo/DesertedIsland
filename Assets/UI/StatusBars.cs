@@ -10,15 +10,20 @@ public class StatusBars : MonoBehaviour
     private Image healthBar;
     public float currentHealth;
     private float maxHealth = 100f;
+    private Life player;
 
     private void Start() {
         healthBar = GetComponent<Image>();
-        // var player = GameObject.Find("Player").GetComponent<FirstPerson>();
-        // Debug.Log(player);
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Life>();
+        
+        Debug.Log(player.hp);
+        Debug.Log(player.water);
+        Debug.Log(player.temperature);
+        Debug.Log(player.food);
         maxHealth = 100f;
     }
     private void Update() {
-        // currentHealth = player.hp;
-        // healthBar.fillAmount = 50;
+        currentHealth = player.hp;
+        healthBar.fillAmount = 50;
     }
 }
