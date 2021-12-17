@@ -10,6 +10,7 @@ public class Item : MonoBehaviour
     public Text pickIt;
     private bool canPick;
     public Sprite icon;
+    public string type;
     private GameObject objectText;
 
     //aktualny slot czy wolny?
@@ -39,6 +40,7 @@ public class Item : MonoBehaviour
             {
                 weaponSwitch.setIconSlot(icon);
                 weaponSwitch.setItemSlot(ObjectID);
+                weaponSwitch.setTypeObject(type);
                 DestroyItem();
             }
         }

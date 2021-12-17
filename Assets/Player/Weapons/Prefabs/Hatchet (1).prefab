@@ -133,6 +133,7 @@ MonoBehaviour:
   weaponSwitch: {fileID: 0}
   pickIt: {fileID: 0}
   icon: {fileID: 21300000, guid: dbea324af4c68d446bd91b88bd36abee, type: 3}
+  type: axe
 --- !u!65 &2605724790713307354
 BoxCollider:
   m_ObjectHideFlags: 0

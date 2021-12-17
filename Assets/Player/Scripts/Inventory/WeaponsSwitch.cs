@@ -12,6 +12,7 @@ public class WeaponsSwitch : MonoBehaviour
     public GameObject[] slots; //kolor aktualnie wybranego slota i odow³anie siê do jego ikony
     public bool[] slotsStatus; //if == true - zajêty slot 
     public int[] slotObjectId;
+    public string[] typeObject;
     public int slotSet = 1;
 
     public Animator animator;
@@ -24,7 +25,8 @@ public class WeaponsSwitch : MonoBehaviour
         {
             slots[i].transform.GetChild(0).gameObject.SetActive(false);
             slotObjectId[i] = 0;
-        }
+            typeObject[i] = "none";
+}
 
         SwapWeapons(1);
     }
@@ -96,6 +98,19 @@ public class WeaponsSwitch : MonoBehaviour
         iconSlot.GetComponent<Image>().sprite = icon;
         iconSlot.SetActive(true);
         slotsStatus[slotSet] = true;
+    }
+
+    public void setTypeObject(string type)
+    {
+        typeObject[slotSet] = type;
+        Debug.Log(type);
+    }
+
+    public string getTypeWeapon()
+    {
+        Debug.Log(typeObject[slotSet]);
+        Debug.Log(slotSet);
+        return typeObject[slotSet];
     }
 
     public void setEmptyIconSlot()

@@ -130,6 +130,7 @@ MonoBehaviour:
   weaponSwitch: {fileID: 0}
   pickIt: {fileID: 0}
   icon: {fileID: 21300000, guid: 99268480e9af6434d9d4538240792fa5, type: 3}
+  type: torch
 --- !u!135 &5972009641892193706
 SphereCollider:
   m_ObjectHideFlags: 0
