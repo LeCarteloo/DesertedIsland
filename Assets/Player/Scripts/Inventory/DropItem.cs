@@ -29,6 +29,7 @@ public class DropItem : MonoBehaviour
             {
                 weaponSwitch.setStatusSlot(false);
                 weaponSwitch.setEmptyIconSlot();
+                Debug.Log("Wywalane ID: "+weaponSwitch.getSetItemId());
                 Instantiate(items[weaponSwitch.getSetItemId()], dropPosition.transform.position, Quaternion.identity);
             }
         }
