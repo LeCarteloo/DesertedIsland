@@ -8,22 +8,26 @@ using UnityStandardAssets.Utility;
 public class StatusBars : MonoBehaviour
 {
     private Image healthBar;
-    public float currentHealth;
-    private float maxHealth = 100f;
+    private Image foodBar;
+    private Image waterBar;
+
     private Life player;
 
     private void Start() {
-        healthBar = GetComponent<Image>();
+        healthBar = GameObject.FindGameObjectWithTag("Health").GetComponent<Image>();
+        foodBar = GameObject.FindGameObjectWithTag("Food").GetComponent<Image>();
+        waterBar = GameObject.FindGameObjectWithTag("Water").GetComponent<Image>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Life>();
-        
-        Debug.Log(player.hp);
-        Debug.Log(player.water);
-        Debug.Log(player.temperature);
-        Debug.Log(player.food);
-        maxHealth = 100f;
+
+        Debug.Log("hp" + player.hp);
+        Debug.Log("water" + player.water);
+        Debug.Log("temperature" + player.temperature);
+        Debug.Log("food" + player.food);
+
     }
     private void Update() {
-        currentHealth = player.hp;
-        healthBar.fillAmount = 50;
+        healthBar.fillAmount = player.hp / 100f;
+        waterBar.fillAmount = player.water / 100f;
+        foodBar.fillAmount = player.food / 100f;
     }
 }
