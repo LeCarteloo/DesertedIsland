@@ -6,6 +6,9 @@ TagManager:
   tags:
   - uselessTagForPickIt
   - Tree
+  - Health
+  - Food
+  - Water
   layers:
   - Default
   - TransparentFX
