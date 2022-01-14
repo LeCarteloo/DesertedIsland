@@ -29,7 +29,7 @@ public class HitTree : MonoBehaviour
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit))
             {
                 distance = hit.distance;
-                Debug.Log("DRZEWO: "+distance);
+
                 if (hit.collider.gameObject.tag == "Tree" && distance <= rayLength)
                 {
                     tree = GameObject.Find(hit.collider.gameObject.name).GetComponent<Tree>();

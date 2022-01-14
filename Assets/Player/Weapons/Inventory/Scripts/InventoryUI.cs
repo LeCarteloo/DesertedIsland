@@ -15,6 +15,7 @@ public class InventoryUI : MonoBehaviour
 		// Check to see if we should open/close the inventory
 		if (Input.GetKeyDown(KeyCode.Tab))
 		{
+			Cursor.visible = true;
 			inventoryUI.SetActive(!inventoryUI.activeSelf);
 		}
 	}
