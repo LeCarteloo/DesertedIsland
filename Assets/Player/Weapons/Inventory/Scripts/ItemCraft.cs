@@ -43,7 +43,6 @@ public class ItemCraft : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("PATYK");
         if (other.tag == "Player")
         {
             pickIt.text = "Naciœnij [F] aby podnieœæ";

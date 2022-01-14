@@ -7,10 +7,14 @@ public class Weapons : MonoBehaviour
 {
     public Text textSticks;
     public Text textWood;
-    public Text textstones;
+    public Text textStones;
+    public Text textIron;
+    public Text textCoal;
     public int sticks;
     public int wood;
     public int stones;
+    public int iron;
+    public int coal;
 
 
     // Start is called before the first frame update
@@ -19,6 +23,14 @@ public class Weapons : MonoBehaviour
         sticks = 0;
         wood = 0;
         stones = 0;
+        iron = 0;
+        coal = 0;
+
+        textSticks.text = sticks.ToString();
+        textWood.text = wood.ToString();
+        textStones.text = stones.ToString();
+        textIron.text = wood.ToString();
+        textCoal.text = stones.ToString();
     }
 
     public void addSomething(string type, int howMany)
@@ -31,9 +43,17 @@ public class Weapons : MonoBehaviour
         {
             addWood(howMany);
         }
-        else if(type == "stones")
+        else if(type == "stone")
         {
             addStone(howMany);
+        }
+        else if (type == "iron")
+        {
+            addIron(howMany);
+        }
+        else if (type == "coal")
+        {
+            addCoal(howMany);
         }
         else
         {
@@ -50,14 +70,29 @@ public class Weapons : MonoBehaviour
     public void addWood(int nwood)
     {
         wood += nwood;
-        textWood.text = sticks.ToString();
+        textWood.text = wood.ToString();
     }
 
     public void addStone(int stone)
     {
         stones += stone;
-        textstones.text = sticks.ToString();
+        textStones.text = stones.ToString();
     }
+
+    public void addIron(int siron)
+    {
+        iron += siron;
+        textIron.text = iron.ToString();
+    }
+
+    public void addCoal(int scaol)
+    {
+        coal += scaol;
+        textCoal.text = coal.ToString();
+    }
+
+
+
 
     public void deleteSticks(int stick)
     {
@@ -68,14 +103,29 @@ public class Weapons : MonoBehaviour
     public void deleteWood(int nwood)
     {
         wood -= nwood;
-        textWood.text = sticks.ToString();
+        textWood.text = wood.ToString();
     }
 
     public void deleteStone(int stone)
     {
         stones -= stone;
-        textstones.text = sticks.ToString();
+        textStones.text = stones.ToString();
     }
+
+    public void deleteIron(int siron)
+    {
+        iron -= siron;
+        textIron.text = iron.ToString();
+    }
+
+    public void deleteCoal(int scaol)
+    {
+        coal -= scaol;
+        textCoal.text = coal.ToString();
+    }
+
+
+
 
     public int getSticks()
     {
@@ -90,6 +140,16 @@ public class Weapons : MonoBehaviour
     public int getStone()
     {
         return stones;
+    }
+
+    public int getIron()
+    {
+        return iron;
+    }
+
+    public int getCoal()
+    {
+        return coal;
     }
 
 }

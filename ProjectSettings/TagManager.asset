@@ -9,6 +9,8 @@ TagManager:
   - Health
   - Food
   - Water
+  - Ore
+  - HandItem
   layers:
   - Default
   - TransparentFX
