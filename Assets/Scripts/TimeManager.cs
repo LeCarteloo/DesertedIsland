@@ -38,7 +38,7 @@ public class TimeManager : MonoBehaviour
     void Start()
     {
         minute = 0;
-        hour = 0;
+        hour = 12;
         timer = speed;
     }
 

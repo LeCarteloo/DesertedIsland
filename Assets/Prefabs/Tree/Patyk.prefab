@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2009598393372612704}
   - component: {fileID: 2009598393372612705}
   - component: {fileID: 2009598393372612706}
+  - component: {fileID: 5327070256656738326}
+  - component: {fileID: 6860120780660304148}
   m_Layer: 0
   m_Name: Patyk
   m_TagString: Untagged
@@ -113,3 +115,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5327070256656738326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009598393372612707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9865ce73691685f45bf8a254fcc6b32e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons: {fileID: 0}
+  pickIt: {fileID: 0}
+  type: sticks
+--- !u!135 &6860120780660304148
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009598393372612707}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940698}
