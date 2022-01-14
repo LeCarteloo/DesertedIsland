@@ -64,7 +64,7 @@ public class Tree : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Axe")
+        if (other.tag == "Axe" && Input.GetKeyDown(KeyCode.Mouse0))
         {
             treeHealth -= 1;
         }

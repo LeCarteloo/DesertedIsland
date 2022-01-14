@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17880322, g: 0.22388464, b: 0.30577838, a: 1}
+  m_IndirectSpecularColor: {r: 0.17880219, g: 0.22388345, b: 0.30577773, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1754,6 +1754,7 @@ GameObject:
   - component: {fileID: 46474019}
   - component: {fileID: 46474018}
   - component: {fileID: 46474017}
+  - component: {fileID: 46474023}
   m_Layer: 0
   m_Name: Deer (18)
   m_TagString: Untagged
@@ -1797,7 +1798,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46474015}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -1873,6 +1874,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &46474023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46474015}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &46934639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3844,6 +3858,7 @@ GameObject:
   - component: {fileID: 110666572}
   - component: {fileID: 110666571}
   - component: {fileID: 110666570}
+  - component: {fileID: 110666576}
   m_Layer: 0
   m_Name: Deer (23)
   m_TagString: Untagged
@@ -3887,7 +3902,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110666568}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -3963,6 +3978,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &110666576
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110666568}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &111765551
 GameObject:
   m_ObjectHideFlags: 0
@@ -6710,6 +6738,7 @@ GameObject:
   - component: {fileID: 188070863}
   - component: {fileID: 188070862}
   - component: {fileID: 188070865}
+  - component: {fileID: 188070866}
   m_Layer: 0
   m_Name: Deer (2)
   m_TagString: Untagged
@@ -6803,6 +6832,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!65 &188070866
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188070860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &188753608
 GameObject:
   m_ObjectHideFlags: 0
@@ -6818,6 +6860,7 @@ GameObject:
   - component: {fileID: 188753612}
   - component: {fileID: 188753611}
   - component: {fileID: 188753610}
+  - component: {fileID: 188753616}
   m_Layer: 0
   m_Name: Deer (3)
   m_TagString: Untagged
@@ -6861,7 +6904,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188753608}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -6937,6 +6980,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &188753616
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188753608}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &191127144
 GameObject:
   m_ObjectHideFlags: 0
@@ -7422,6 +7478,7 @@ GameObject:
   - component: {fileID: 211169833}
   - component: {fileID: 211169832}
   - component: {fileID: 211169831}
+  - component: {fileID: 211169837}
   m_Layer: 0
   m_Name: Deer (16)
   m_TagString: Untagged
@@ -7465,7 +7522,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211169829}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -7541,6 +7598,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &211169837
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211169829}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &212050840
 GameObject:
   m_ObjectHideFlags: 0
@@ -9522,6 +9592,18 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 656669778299144547, guid: f25f1c3ecac18de43a690333e5452309, type: 3}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: Health
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: maxDrop
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: minDrop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393321601134769194, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -10064,12 +10146,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4809884433925660426, guid: 8e1c26b8e206e9044afd9fdb57c3de65, type: 3}
     - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
-      propertyPath: maxDrop
+      propertyPath: Health
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
-      propertyPath: minDrop
+      propertyPath: maxDrop
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
+      propertyPath: minDrop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
@@ -14929,6 +15015,7 @@ GameObject:
   - component: {fileID: 297972654}
   - component: {fileID: 297972653}
   - component: {fileID: 297972652}
+  - component: {fileID: 297972658}
   m_Layer: 0
   m_Name: Deer (12)
   m_TagString: Untagged
@@ -14972,7 +15059,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297972650}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -15048,6 +15135,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &297972658
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297972650}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &298979142
 GameObject:
   m_ObjectHideFlags: 0
@@ -15701,6 +15801,10 @@ PrefabInstance:
     - target: {fileID: 5164135720656079695, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
       propertyPath: m_Name
       value: stone_ore
+      objectReference: {fileID: 0}
+    - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
+      propertyPath: Health
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
@@ -16800,6 +16904,7 @@ GameObject:
   - component: {fileID: 351320856}
   - component: {fileID: 351320855}
   - component: {fileID: 351320854}
+  - component: {fileID: 351320860}
   m_Layer: 0
   m_Name: Deer (19)
   m_TagString: Untagged
@@ -16843,7 +16948,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351320852}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -16919,6 +17024,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &351320860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351320852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &353512595
 GameObject:
   m_ObjectHideFlags: 0
@@ -18963,6 +19081,7 @@ GameObject:
   - component: {fileID: 412109157}
   - component: {fileID: 412109156}
   - component: {fileID: 412109155}
+  - component: {fileID: 412109161}
   m_Layer: 0
   m_Name: Deer (30)
   m_TagString: Untagged
@@ -19006,7 +19125,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412109153}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -19082,6 +19201,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &412109161
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412109153}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &416486218
 GameObject:
   m_ObjectHideFlags: 0
@@ -19097,6 +19229,7 @@ GameObject:
   - component: {fileID: 416486222}
   - component: {fileID: 416486221}
   - component: {fileID: 416486220}
+  - component: {fileID: 416486226}
   m_Layer: 0
   m_Name: Deer (28)
   m_TagString: Untagged
@@ -19140,7 +19273,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416486218}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -19216,6 +19349,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &416486226
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416486218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &420354889
 GameObject:
   m_ObjectHideFlags: 0
@@ -20524,6 +20670,7 @@ GameObject:
   - component: {fileID: 467837789}
   - component: {fileID: 467837788}
   - component: {fileID: 467837787}
+  - component: {fileID: 467837793}
   m_Layer: 0
   m_Name: Deer (2)
   m_TagString: Untagged
@@ -20567,11 +20714,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467837785}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
-  m_Center: {x: -0.018745422, y: 0.72449875, z: 0.030044556}
+  m_Center: {x: -0.01, y: 0.72449875, z: 0.030044556}
 --- !u!114 &467837789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20643,6 +20790,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &467837793
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467837785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &470926502
 GameObject:
   m_ObjectHideFlags: 0
@@ -21528,7 +21688,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506838657}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 95.23, y: 31.58762, z: 53.18}
+  m_LocalPosition: {x: 83.77, y: 31.58762, z: 75.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1293573929}
@@ -22217,6 +22377,7 @@ GameObject:
   - component: {fileID: 532665163}
   - component: {fileID: 532665162}
   - component: {fileID: 532665161}
+  - component: {fileID: 532665167}
   m_Layer: 0
   m_Name: Deer (24)
   m_TagString: Untagged
@@ -22260,7 +22421,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532665159}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -22336,6 +22497,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &532665167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532665159}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &535817330
 GameObject:
   m_ObjectHideFlags: 0
@@ -29012,6 +29186,7 @@ GameObject:
   - component: {fileID: 593733933}
   - component: {fileID: 593733932}
   - component: {fileID: 593733931}
+  - component: {fileID: 593733937}
   m_Layer: 0
   m_Name: Deer (15)
   m_TagString: Untagged
@@ -29055,7 +29230,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593733929}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -29131,6 +29306,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &593733937
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593733929}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &595247409
 GameObject:
   m_ObjectHideFlags: 0
@@ -29426,6 +29614,7 @@ GameObject:
   - component: {fileID: 603451389}
   - component: {fileID: 603451388}
   - component: {fileID: 603451387}
+  - component: {fileID: 603451393}
   m_Layer: 0
   m_Name: Deer (14)
   m_TagString: Untagged
@@ -29469,7 +29658,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603451385}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -29545,6 +29734,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &603451393
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603451385}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &605479601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2987712417251338680, guid: 952dcc5ebf00af2489dc8764659a230a, type: 3}
@@ -42261,6 +42463,7 @@ GameObject:
   - component: {fileID: 860495335}
   - component: {fileID: 860495334}
   - component: {fileID: 860495333}
+  - component: {fileID: 860495339}
   m_Layer: 0
   m_Name: Deer (22)
   m_TagString: Untagged
@@ -42304,7 +42507,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860495331}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -42380,6 +42583,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &860495339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860495331}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &860842343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42391,6 +42607,18 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 656669778299144547, guid: f25f1c3ecac18de43a690333e5452309, type: 3}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: Health
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: maxDrop
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: minDrop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393321601134769194, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -42964,6 +43192,7 @@ GameObject:
   - component: {fileID: 880733498}
   - component: {fileID: 880733497}
   - component: {fileID: 880733496}
+  - component: {fileID: 880733502}
   m_Layer: 0
   m_Name: Deer (6)
   m_TagString: Untagged
@@ -43007,7 +43236,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880733494}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -43083,6 +43312,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &880733502
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880733494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &882055965
 GameObject:
   m_ObjectHideFlags: 0
@@ -44267,6 +44509,7 @@ GameObject:
   - component: {fileID: 910191660}
   - component: {fileID: 910191659}
   - component: {fileID: 910191658}
+  - component: {fileID: 910191664}
   m_Layer: 0
   m_Name: Deer (1)
   m_TagString: Untagged
@@ -44310,7 +44553,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910191656}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -44386,6 +44629,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &910191664
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910191656}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &911455922
 GameObject:
   m_ObjectHideFlags: 0
@@ -44401,6 +44657,7 @@ GameObject:
   - component: {fileID: 911455926}
   - component: {fileID: 911455925}
   - component: {fileID: 911455924}
+  - component: {fileID: 911455930}
   m_Layer: 0
   m_Name: Deer (11)
   m_TagString: Untagged
@@ -44444,7 +44701,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911455922}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -44520,6 +44777,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &911455930
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911455922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &912469086
 GameObject:
   m_ObjectHideFlags: 0
@@ -44936,6 +45206,7 @@ GameObject:
   - component: {fileID: 918180666}
   - component: {fileID: 918180665}
   - component: {fileID: 918180664}
+  - component: {fileID: 918180670}
   m_Layer: 0
   m_Name: Deer (31)
   m_TagString: Untagged
@@ -44979,7 +45250,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918180662}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -45055,6 +45326,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &918180670
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918180662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &920754534
 GameObject:
   m_ObjectHideFlags: 0
@@ -45243,13 +45527,14 @@ GameObject:
   - component: {fileID: 934497223}
   - component: {fileID: 934497225}
   - component: {fileID: 934497224}
+  - component: {fileID: 934497226}
   m_Layer: 10
   m_Name: Sword
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &934497223
 Transform:
   m_ObjectHideFlags: 0
@@ -45313,6 +45598,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934497222}
   m_Mesh: {fileID: -5076798556035486163, guid: 0e3bd4ca0af0728488478b63fc8905f1, type: 3}
+--- !u!136 &934497226
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934497222}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.04
+  m_Height: 2.59
+  m_Direction: 2
+  m_Center: {x: -0.00032583874, y: -0.000015306396, z: -1.17}
 --- !u!1 &934669979
 GameObject:
   m_ObjectHideFlags: 0
@@ -47046,6 +47345,7 @@ GameObject:
   - component: {fileID: 982939134}
   - component: {fileID: 982939133}
   - component: {fileID: 982939132}
+  - component: {fileID: 982939138}
   m_Layer: 0
   m_Name: Deer (27)
   m_TagString: Untagged
@@ -47089,7 +47389,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982939130}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -47165,6 +47465,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &982939138
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982939130}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &983819809
 GameObject:
   m_ObjectHideFlags: 0
@@ -48755,6 +49068,7 @@ GameObject:
   - component: {fileID: 1031019292}
   - component: {fileID: 1031019291}
   - component: {fileID: 1031019290}
+  - component: {fileID: 1031019296}
   m_Layer: 0
   m_Name: Deer (21)
   m_TagString: Untagged
@@ -48798,7 +49112,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031019288}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -48874,6 +49188,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &1031019296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031019288}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1031189390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49491,12 +49818,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4809884433925660426, guid: 8e1c26b8e206e9044afd9fdb57c3de65, type: 3}
     - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
-      propertyPath: maxDrop
+      propertyPath: Health
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
-      propertyPath: minDrop
+      propertyPath: maxDrop
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
+      propertyPath: minDrop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
@@ -50441,6 +50772,7 @@ GameObject:
   - component: {fileID: 1064551747}
   - component: {fileID: 1064551746}
   - component: {fileID: 1064551745}
+  - component: {fileID: 1064551751}
   m_Layer: 0
   m_Name: Deer (17)
   m_TagString: Untagged
@@ -50484,7 +50816,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064551743}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -50560,6 +50892,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &1064551751
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064551743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1066248993
 GameObject:
   m_ObjectHideFlags: 0
@@ -58905,6 +59250,7 @@ GameObject:
   - component: {fileID: 1160724103}
   - component: {fileID: 1160724102}
   - component: {fileID: 1160724101}
+  - component: {fileID: 1160724107}
   m_Layer: 0
   m_Name: Deer (5)
   m_TagString: Untagged
@@ -58948,11 +59294,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160724099}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
-  m_Center: {x: -0.018745422, y: 0.72449875, z: 0.030044556}
+  m_Size: {x: 0.63734436, y: 1.8728333, z: 2.5476074}
+  m_Center: {x: -0.018745422, y: 1.0625305, z: 0.42218018}
 --- !u!114 &1160724103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59024,6 +59370,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &1160724107
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160724099}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1165027366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61632,12 +61991,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4809884433925660426, guid: 8e1c26b8e206e9044afd9fdb57c3de65, type: 3}
     - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
-      propertyPath: maxDrop
+      propertyPath: Health
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
-      propertyPath: minDrop
+      propertyPath: maxDrop
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
+      propertyPath: minDrop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
@@ -71625,6 +71988,7 @@ GameObject:
   - component: {fileID: 1398282046}
   - component: {fileID: 1398282045}
   - component: {fileID: 1398282044}
+  - component: {fileID: 1398282050}
   m_Layer: 0
   m_Name: Deer (4)
   m_TagString: Untagged
@@ -71668,7 +72032,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398282042}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -71744,6 +72108,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &1398282050
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398282042}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1398865843
 GameObject:
   m_ObjectHideFlags: 0
@@ -73856,6 +74233,7 @@ GameObject:
   - component: {fileID: 1452679413}
   - component: {fileID: 1452679412}
   - component: {fileID: 1452679411}
+  - component: {fileID: 1452679417}
   m_Layer: 0
   m_Name: Deer (25)
   m_TagString: Untagged
@@ -73899,7 +74277,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452679409}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -73975,6 +74353,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &1452679417
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452679409}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!224 &1453887141 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4393321601134769194, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
@@ -82576,6 +82967,7 @@ GameObject:
   - component: {fileID: 1585503125}
   - component: {fileID: 1585503124}
   - component: {fileID: 1585503123}
+  - component: {fileID: 1585503129}
   m_Layer: 0
   m_Name: Deer (26)
   m_TagString: Untagged
@@ -82619,7 +83011,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585503121}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -82695,6 +83087,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &1585503129
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585503121}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1586723611
 GameObject:
   m_ObjectHideFlags: 0
@@ -83140,6 +83545,18 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 656669778299144547, guid: f25f1c3ecac18de43a690333e5452309, type: 3}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: Health
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: maxDrop
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: minDrop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393321601134769194, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -83403,12 +83820,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4809884433925660426, guid: 8e1c26b8e206e9044afd9fdb57c3de65, type: 3}
     - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
-      propertyPath: maxDrop
+      propertyPath: Health
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
-      propertyPath: minDrop
+      propertyPath: maxDrop
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
+      propertyPath: minDrop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
@@ -84720,6 +85141,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_ore (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
+      propertyPath: Health
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
 --- !u!1 &1662173328
@@ -85905,6 +86330,7 @@ GameObject:
   - component: {fileID: 1696516984}
   - component: {fileID: 1696516983}
   - component: {fileID: 1696516982}
+  - component: {fileID: 1696516988}
   m_Layer: 0
   m_Name: Deer (7)
   m_TagString: Untagged
@@ -85948,7 +86374,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696516980}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -86024,6 +86450,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &1696516988
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696516980}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1697053274
 GameObject:
   m_ObjectHideFlags: 0
@@ -88114,6 +88553,7 @@ GameObject:
   - component: {fileID: 1786169102}
   - component: {fileID: 1786169104}
   - component: {fileID: 1786169103}
+  - component: {fileID: 1786169105}
   m_Layer: 0
   m_Name: Deer (1)
   m_TagString: Untagged
@@ -88129,7 +88569,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786169097}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.255356, y: -5.461586, z: -16.593964}
+  m_LocalPosition: {x: -10.34, y: -5.461586, z: -14.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1006823282}
@@ -88228,11 +88668,24 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786169097}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
   m_Center: {x: -0.018745422, y: 0.72449875, z: 0.030044556}
+--- !u!65 &1786169105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786169097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1975708, y: 2.6326141, z: 2.5727081}
+  m_Center: {x: 0.006134033, y: 0.81630707, z: 0.33193207}
 --- !u!1 &1787622025
 GameObject:
   m_ObjectHideFlags: 0
@@ -89118,6 +89571,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 659119475}
     m_Modifications:
+    - target: {fileID: 3093233775210309482, guid: 141361987a38c0a48895b2c314405ca5, type: 3}
+      propertyPath: Health
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093233775210309482, guid: 141361987a38c0a48895b2c314405ca5, type: 3}
+      propertyPath: maxDrop
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093233775210309482, guid: 141361987a38c0a48895b2c314405ca5, type: 3}
+      propertyPath: minDrop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4486746547987492908, guid: 141361987a38c0a48895b2c314405ca5, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -89871,6 +90336,7 @@ GameObject:
   - component: {fileID: 1833855359}
   - component: {fileID: 1833855358}
   - component: {fileID: 1833855357}
+  - component: {fileID: 1833855363}
   m_Layer: 0
   m_Name: Deer (20)
   m_TagString: Untagged
@@ -89914,7 +90380,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833855355}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -89990,6 +90456,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &1833855363
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833855355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1834949299
 GameObject:
   m_ObjectHideFlags: 0
@@ -91403,12 +91882,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4809884433925660426, guid: 8e1c26b8e206e9044afd9fdb57c3de65, type: 3}
     - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
-      propertyPath: maxDrop
+      propertyPath: Health
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
-      propertyPath: minDrop
+      propertyPath: maxDrop
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8533475663438693678, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
+      propertyPath: minDrop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 914d6e4eb80d66b48969e378363a7767, type: 3}
@@ -92488,6 +92971,7 @@ GameObject:
   - component: {fileID: 1927153099}
   - component: {fileID: 1927153098}
   - component: {fileID: 1927153097}
+  - component: {fileID: 1927153103}
   m_Layer: 0
   m_Name: Deer (29)
   m_TagString: Untagged
@@ -92531,7 +93015,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927153095}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -92607,6 +93091,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &1927153103
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927153095}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1928585039
 GameObject:
   m_ObjectHideFlags: 0
@@ -101056,6 +101553,18 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 656669778299144547, guid: f25f1c3ecac18de43a690333e5452309, type: 3}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: Health
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: maxDrop
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: minDrop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393321601134769194, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -101722,6 +102231,18 @@ PrefabInstance:
       propertyPath: drop
       value: 
       objectReference: {fileID: 656669778299144547, guid: f25f1c3ecac18de43a690333e5452309, type: 3}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: Health
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: maxDrop
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224320291163095, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
+      propertyPath: minDrop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393321601134769194, guid: 57ec7a64a22668349bb1d902c6ee1c44, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -102366,6 +102887,7 @@ GameObject:
   - component: {fileID: 2094436150}
   - component: {fileID: 2094436149}
   - component: {fileID: 2094436148}
+  - component: {fileID: 2094436154}
   m_Layer: 0
   m_Name: Deer (13)
   m_TagString: Untagged
@@ -102409,7 +102931,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094436146}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.63734436, y: 1.1967697, z: 1.1903381}
@@ -102485,6 +103007,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &2094436154
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094436146}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2094612485
 GameObject:
   m_ObjectHideFlags: 0
@@ -104566,7 +105101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1003329686818480536
 GameObject:
   m_ObjectHideFlags: 0

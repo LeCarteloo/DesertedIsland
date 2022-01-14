@@ -12,6 +12,7 @@ TagManager:
   - Ore
   - HandItem
   - Axe
+  - Weapon
   layers:
   - Default
   - TransparentFX

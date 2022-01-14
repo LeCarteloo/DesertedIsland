@@ -45,11 +45,9 @@ public class Ore : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("KOLIZAJ ORE");
-        Debug.Log(other.tag);
-        if (other.tag == "HandItem")
+
+        if (other.tag == "HandItem" && Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Debug.Log("HIT");
             Health -= 1;
         }
     }
