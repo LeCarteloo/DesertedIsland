@@ -82,6 +82,7 @@ public class WeaponsSwitch : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && getTypeWeapon() == "eat")
         {
             player.addFood(50);
+            player.addHp(10);
             setStatusSlot(false);
             setEmptyIconSlot();
             setTypeObject("none");

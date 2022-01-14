@@ -16,6 +16,7 @@ public class Weapons : MonoBehaviour
     public int iron;
     public int coal;
 
+    public GameObject menuPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -27,10 +28,17 @@ public class Weapons : MonoBehaviour
         coal = 0;
 
         textSticks.text = sticks.ToString();
-        textWood.text = wood.ToString();
         textStones.text = stones.ToString();
         textIron.text = wood.ToString();
         textCoal.text = stones.ToString();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            menuPanel.SetActive(!menuPanel.activeSelf);
+        }
     }
 
     public void addSomething(string type, int howMany)
