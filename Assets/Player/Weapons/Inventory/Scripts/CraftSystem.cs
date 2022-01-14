@@ -40,13 +40,13 @@ public class CraftSystem : MonoBehaviour
     public void CreateWarAxe()
     {
         int sticks = 6;
-        int stones = 0;
+        int iron = 5;
 
-        if (weapons.getSticks() >= sticks && weapons.getStone() >= stones)
+        if (weapons.getSticks() >= sticks && weapons.getIron() >= iron)
         {
             Instantiate(items[0], dropPosition.transform.position, Quaternion.identity);
             weapons.deleteSticks(sticks);
-            weapons.deleteStone(stones);
+            weapons.deleteIron(iron);
         }
         else
         {
@@ -58,7 +58,7 @@ public class CraftSystem : MonoBehaviour
     public void CreateTreeAxe()
     {
         int sticks = 3;
-        int stones = 0;
+        int stones = 5;
 
         if (weapons.getSticks() >= sticks && weapons.getStone() >= stones)
         {
@@ -76,7 +76,7 @@ public class CraftSystem : MonoBehaviour
     public void CreatePickaxe()
     {
         int sticks = 3;
-        int stones = 0;
+        int stones = 6;
 
         if (weapons.getSticks() >= sticks && weapons.getStone() >= stones)
         {
@@ -95,13 +95,13 @@ public class CraftSystem : MonoBehaviour
     public void CreateSword()
     {
         int sticks = 2;
-        int stones = 0;
+        int iron = 5;
 
-        if (weapons.getSticks() >= sticks && weapons.getStone() >= stones)
+        if (weapons.getSticks() >= sticks && weapons.getIron() >= iron)
         {
             Instantiate(items[3], dropPosition.transform.position, Quaternion.identity);
             weapons.deleteSticks(sticks);
-            weapons.deleteStone(stones);
+            weapons.deleteIron(iron);
         }
         else
         {
@@ -113,13 +113,13 @@ public class CraftSystem : MonoBehaviour
     public void CreateTorch()
     {
         int sticks = 1;
-        int stones = 0;
+        int coal = 1;
 
-        if (weapons.getSticks() >= sticks && weapons.getStone() >= stones)
+        if (weapons.getSticks() >= sticks && weapons.getCoal() >= coal)
         {
             Instantiate(items[4], dropPosition.transform.position, Quaternion.identity);
             weapons.deleteSticks(sticks);
-            weapons.deleteStone(stones);
+            weapons.deleteCoal(coal);
         }
         else
         {
