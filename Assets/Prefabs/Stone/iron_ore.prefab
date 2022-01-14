@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 4486746547987492908}
   - component: {fileID: 4476954687946918144}
   - component: {fileID: 4469332779171100276}
+  - component: {fileID: 8295502877383221318}
+  - component: {fileID: 1354753689040118037}
+  - component: {fileID: 104093888171762434}
+  - component: {fileID: 3093233775210309482}
   m_Layer: 0
   m_Name: iron_ore
   m_TagString: Untagged
@@ -81,3 +85,60 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8295502877383221318
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490330562479306196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300020, guid: 5f3a7deba91ee3341b2266db1be8c0a0, type: 3}
+--- !u!64 &1354753689040118037
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490330562479306196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300020, guid: 5f3a7deba91ee3341b2266db1be8c0a0, type: 3}
+--- !u!114 &104093888171762434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490330562479306196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826262404c2588d43b126280f31f36aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayLength: 10
+--- !u!114 &3093233775210309482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490330562479306196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042fa645e261ba9419fddf632c5dad63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 2
+  drop: {fileID: 2016321225713298500, guid: e26e871e7c8a67e4fb41cbd5bdac8e00, type: 3}
+  minDrop: 5
+  maxDrop: 20

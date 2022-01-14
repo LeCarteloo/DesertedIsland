@@ -11,7 +11,7 @@ public class WeatherManager : MonoBehaviour
     [Header("Fog Settings")]
     public bool isFogOn = true;
     public Gradient FogColor;
-    [Range(0.01f, 0.07f)] public float fogDensity = 0.01f;
+    [Range(0.0005f, 0.07f)] public float fogDensity = 0.0009f;
     // public Color fogColor;
     [Header("Time")]
 

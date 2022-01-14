@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 2
-  drop: {fileID: 0}
+  drop: {fileID: 656669778299144547, guid: f25f1c3ecac18de43a690333e5452309, type: 3}
   minDrop: 10
   maxDrop: 20
 --- !u!64 &1224320291163097
