@@ -28,7 +28,8 @@ public class Tree : MonoBehaviour
         {
             
             gameObject.GetComponent<Rigidbody>().isKinematic = false;
-            gameObject.GetComponent<Rigidbody>().AddForce(player.transform.forward * speed);
+            gameObject.GetComponent<Rigidbody>().useGravity = true;
+            gameObject.GetComponent<Rigidbody>().AddForce(player.transform.forward, ForceMode.Impulse);
             DoDelayAction(delayDrop);
         }
     }
