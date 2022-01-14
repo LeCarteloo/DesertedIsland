@@ -8,6 +8,7 @@ public class Life : MonoBehaviour
     public float food = 100.0f;
     public float water = 100.0f;
     public float temperature = 36.6f;
+    public GameObject respawnPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -20,23 +21,29 @@ public class Life : MonoBehaviour
     void Update()
     {
         StatusTemperature();
+
+        if(hp <= 0) {
+            respawnPanel.gameObject.SetActive(true);
+        }
     }
 
     private void FoodSystem()
     {
-        food--;
-        if (food < 0)
-        {
-            //if 0 food
+        if(food > 0 ) {
+            food--;
+        }
+        else {
+            hp -= 3;
         }
     }
 
     private void WaterSystem()
     {
-        water--;
-        if (water < 0)
-        {
-            //if 0 water
+        if(water > 0 ) {
+            water--;
+        }
+        else {
+            hp -= 5;
         }
     }
 

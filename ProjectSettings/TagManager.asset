@@ -13,6 +13,7 @@ TagManager:
   - HandItem
   - Axe
   - Weapon
+  - WaterGround
   layers:
   - Default
   - TransparentFX
