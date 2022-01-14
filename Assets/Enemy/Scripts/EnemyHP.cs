@@ -6,10 +6,13 @@ public class EnemyHP : MonoBehaviour
 {
     public int health = 100;
     private bool canHit;
+    private GameObject animal;
+    public Transform drop;
 
     // Start is called before the first frame update
     void Start()
     {
+        animal = this.gameObject;
         canHit = false;
     }
 
@@ -38,6 +41,7 @@ public class EnemyHP : MonoBehaviour
 
     void Dead()
     {
+        Instantiate(drop, animal.transform.position + new Vector3(0f, 0f, 0f), transform.rotation);
         Destroy(gameObject);
     }
 

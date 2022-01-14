@@ -370,6 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  drop: {fileID: 0}
 --- !u!65 &6396805672614714660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -734,6 +735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  drop: {fileID: 2987712417251338680, guid: 952dcc5ebf00af2489dc8764659a230a, type: 3}
 --- !u!65 &6396805673380969799
 BoxCollider:
   m_ObjectHideFlags: 0
