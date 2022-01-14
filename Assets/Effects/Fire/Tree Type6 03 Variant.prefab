@@ -17,15 +17,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9093440768240396299, guid: bab1bd26a5e1e0a4884aa263992389ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 197.38197
+      value: 97.22239
       objectReference: {fileID: 0}
     - target: {fileID: 9093440768240396299, guid: bab1bd26a5e1e0a4884aa263992389ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 70.04788
+      value: 31.64788
       objectReference: {fileID: 0}
     - target: {fileID: 9093440768240396299, guid: bab1bd26a5e1e0a4884aa263992389ba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 210.27353
+      value: 75.801056
       objectReference: {fileID: 0}
     - target: {fileID: 9093440768240396299, guid: bab1bd26a5e1e0a4884aa263992389ba, type: 3}
       propertyPath: m_LocalRotation.w
@@ -67,5 +67,9 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9093440769745367827, guid: bab1bd26a5e1e0a4884aa263992389ba, type: 3}
+      propertyPath: hitAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: c1db353d01e898a45a7805ed02344407, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bab1bd26a5e1e0a4884aa263992389ba, type: 3}

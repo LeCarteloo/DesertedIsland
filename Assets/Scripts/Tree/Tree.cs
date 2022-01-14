@@ -11,6 +11,7 @@ public class Tree : MonoBehaviour
     public int maxDrop = 5;
     public float delayDrop = 4.0f;
 
+    public AudioClip hitAudio;
     private GameObject player;
     private GameObject tree;
     // Start is called before the first frame update
@@ -19,6 +20,8 @@ public class Tree : MonoBehaviour
         tree = this.gameObject;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
         player = GameObject.FindGameObjectWithTag("Player");
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().clip = hitAudio;
     }
 
     // Update is called once per frame
@@ -66,6 +69,7 @@ public class Tree : MonoBehaviour
     {
         if (other.tag == "Axe")
         {
+            GetComponent<AudioSource>().Play();
             treeHealth -= 1;
         }
     }

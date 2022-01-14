@@ -12,12 +12,16 @@ public class Ore : MonoBehaviour
     private GameObject player;
     private GameObject ore;
 
+    public AudioClip hitAudio;
+
     // Start is called before the first frame update
     void Start()
     {
         ore = this.gameObject;
 
         player = GameObject.FindGameObjectWithTag("Player");
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().clip = hitAudio;
     }
 
     // Update is called once per frame
@@ -48,6 +52,7 @@ public class Ore : MonoBehaviour
 
         if (other.tag == "HandItem")
         {
+            GetComponent<AudioSource>().Play();
             Health -= 1;
         }
     }
