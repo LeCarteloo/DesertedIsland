@@ -145,11 +145,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b0e7dc1c5eb434297b25b9920bae3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeHealth: 2
+  treeHealth: 15
   speed: 2
   drop: {fileID: 2009598393372612710, guid: ac3ed695b73cac84d8e711573fd14080, type: 3}
-  minDrop: 1
-  maxDrop: 5
+  minDrop: 3
+  maxDrop: 7
   delayDrop: 4
   hitAudio: {fileID: 8300000, guid: c1db353d01e898a45a7805ed02344407, type: 3}
 --- !u!114 &616457740506951300
