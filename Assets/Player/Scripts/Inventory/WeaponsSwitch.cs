@@ -18,6 +18,8 @@ public class WeaponsSwitch : MonoBehaviour
     public Animator animator;
     public bool switchState;
 
+    private Life player;
+
     private void Start()
     {
         switchState = true;
@@ -29,6 +31,8 @@ public class WeaponsSwitch : MonoBehaviour
 }
 
         SwapWeapons(1);
+
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Life>();
     }
 
     // Update is called once per frame
@@ -73,6 +77,14 @@ public class WeaponsSwitch : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             SwapWeapons(10);
+        }
+
+        if (Input.GetMouseButtonDown(1) && getTypeWeapon() == "eat")
+        {
+            player.addFood(50);
+            setStatusSlot(false);
+            setEmptyIconSlot();
+            setTypeObject("none");
         }
     }
 

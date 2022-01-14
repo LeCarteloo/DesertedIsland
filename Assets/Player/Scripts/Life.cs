@@ -76,4 +76,10 @@ public class Life : MonoBehaviour
 
     }
 
+    public void addFood(int howMany)
+    {
+        food += howMany; 
+    }
+
+
 }
