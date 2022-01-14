@@ -60,4 +60,12 @@ public class Tree : MonoBehaviour
         //Do the action after the delay time has finished.
         DestroyTree();
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Axe")
+        {
+            treeHealth -= 1;
+        }
+    }
 }

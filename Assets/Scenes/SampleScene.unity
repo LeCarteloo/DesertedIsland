@@ -901,6 +901,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85800756}
   m_CullTransparentMesh: 1
+--- !u!1 &90034652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9093440768239998331, guid: bab1bd26a5e1e0a4884aa263992389ba, type: 3}
+  m_PrefabInstance: {fileID: 9093440769219248105}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &90034653
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90034652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: f6e7f2100b2c5544d94468d977d66b29, type: 3}
 --- !u!1 &91067872
 GameObject:
   m_ObjectHideFlags: 0
@@ -23236,6 +23255,25 @@ Transform:
   m_Father: {fileID: 1924225957}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 2.149446, y: 78.69878, z: -179.86166}
+--- !u!1 &1062155398 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 616457741101193821, guid: d3791d77b6efae540a9613453c2136d4, type: 3}
+  m_PrefabInstance: {fileID: 616457742423077583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1062155407
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062155398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 5648c7aa655120f44aab862e4a038f3c, type: 3}
 --- !u!1 &1066248993
 GameObject:
   m_ObjectHideFlags: 0
@@ -42285,7 +42323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1578224766
 RectTransform:
   m_ObjectHideFlags: 0
@@ -52339,6 +52377,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 616457740506951301, guid: d3791d77b6efae540a9613453c2136d4, type: 3}
+      propertyPath: treeHealth
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 616457741101193821, guid: d3791d77b6efae540a9613453c2136d4, type: 3}
       propertyPath: m_Name
       value: Tree Type0 03
@@ -53042,13 +53084,28 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450653633395387}
+  - component: {fileID: 919132149095194626}
   m_Layer: 10
   m_Name: Hatchet
-  m_TagString: Untagged
+  m_TagString: Axe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!136 &919132149095194626
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149095194625}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.03
+  m_Height: 1.25
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.66, z: 0}
 --- !u!1 &919132149298641709
 GameObject:
   m_ObjectHideFlags: 0
@@ -53827,6 +53884,7 @@ GameObject:
   - component: {fileID: 3366576118547666804}
   - component: {fileID: 3366576118547666794}
   - component: {fileID: 3013197662868274706}
+  - component: {fileID: 3366576118876281612}
   m_Layer: 0
   m_Name: Tree Type5 03 (2)
   m_TagString: Tree
@@ -53834,6 +53892,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &3366576118876281612
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3366576118876281611}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e97612a294865943926d93961f9c229, type: 3}
 --- !u!33 &3469287836774993015
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -55714,7 +55786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &7105686371290720369
 MeshRenderer:
   m_ObjectHideFlags: 0

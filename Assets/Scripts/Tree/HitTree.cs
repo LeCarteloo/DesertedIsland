@@ -30,12 +30,12 @@ public class HitTree : MonoBehaviour
             {
                 distance = hit.distance;
 
-                if (hit.collider.gameObject.tag == "Tree" && distance <= rayLength)
+                if (hit.collider.gameObject.tag == "Treedd" && distance <= rayLength)
                 {
                     tree = GameObject.Find(hit.collider.gameObject.name).GetComponent<Tree>();
                     typeWeapon = weaponSwitch.getTypeWeapon();
 
-                    if(typeWeapon == "axe")
+                    if(typeWeapon == "axeds")
                     {
                         tree.treeHealth -= 1;
                     }
