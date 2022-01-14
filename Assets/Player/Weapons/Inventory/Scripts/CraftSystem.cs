@@ -50,8 +50,11 @@ public class CraftSystem : MonoBehaviour
             }
             
         }
+    }
 
-        if(cursorStaus)
+    private void Awake()
+    {
+        if (cursorStaus)
         {
             cursorNone();
         }
