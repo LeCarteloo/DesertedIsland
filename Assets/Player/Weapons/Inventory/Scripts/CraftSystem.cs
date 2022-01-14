@@ -14,6 +14,8 @@ public class CraftSystem : MonoBehaviour
     public Weapons weapons;
     public Text pickIt;
 
+    private bool cursorStaus;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,8 @@ public class CraftSystem : MonoBehaviour
         objectText = GameObject.FindGameObjectWithTag("uselessTagForPickIt");
         pickIt = objectText.GetComponent<Text>();
         pickIt.text = "";
+
+        cursorStaus = false;
     }
 
     // Update is called once per frame
@@ -32,9 +36,41 @@ public class CraftSystem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            Cursor.visible = true;
             craftGUI.SetActive(!craftGUI.activeSelf);
+
+            if (craftGUI.activeSelf)
+            {
+                cursorStaus = true;
+                Debug.Log("W£¥CZONY");
+            }
+            else
+            {
+                cursorStaus = false;
+                Debug.Log("WY£¥CZONY");
+            }
+            
         }
+
+        if(cursorStaus)
+        {
+            cursorNone();
+        }
+        else
+        {
+            cursorLock();
+        }
+    }
+
+    public void cursorLock()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    public void cursorNone()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void CreateWarAxe()

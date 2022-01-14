@@ -46,7 +46,7 @@ public class Ore : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 
-        if (other.tag == "HandItem" && Input.GetKeyDown(KeyCode.Mouse0))
+        if (other.tag == "HandItem")
         {
             Health -= 1;
         }

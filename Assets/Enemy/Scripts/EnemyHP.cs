@@ -50,13 +50,7 @@ public class EnemyHP : MonoBehaviour
 
         if (other.tag == "Weapon")
         {
-            Debug.Log("HIT SARNA");
             health -= 100;
-
-            if (canHit)
-            {
-                Debug.Log(canHit);
-            }
         }
     }
 }
